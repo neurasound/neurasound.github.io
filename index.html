@@ -12,23 +12,33 @@
   <body>
     <article>
       <header>
-        <h1>Servicio de conversión de texto a voz (TTS) </h1>
+        <h1>Latinamerican multiaccent Text-to-Speech Services</h1>
       </header>
     </article>
-      
+    <p>&nbsp;</p> 
     <div>
-      <b>Integrantes del proyecto:</b>
-      Leonardo Pepino, Pablo Riera, Germán Barchi, Joaquín Giaccio.
-    <p></p>
+      <b>About Neurasound </b>    
+        <p>We are a group of audio an machine learning reaserchers based in Buenos Aires, Argentina. Our main goal is to bring AI technology to latinamerican markets, pushing the limits of voice synthesis.</p>
+    
+        <p>For more information contact us: <strong>info@neurasound.com.ar</strong></p>
+
+      <b> Product description </b>
+        <p>Nowadays, very few spanish TTS exist in the market, and most of them have a neutral, Spain or Mexican accent. We focused our efforts in providing an argentinian spanish TTS, which feels more natural to argentinian users and constitutes the main novelty of our project. We also experimented with accents from other latinamerican countries like Colombia and Chile, by curating a multi-accent spanish dataset.</p>
+                
+      <b> Main features </b>
+        <p>Our model supports a variety of latinamerican spanish accents (Argentina, Chile, Colombia, España, México, Perú, Puerto Rico, Uruguay and Venezuela)</p>
+        <p>Voice cloning. By performing speaker adaptation with less than 10 minutes of speech from the target speaker.</p>
+        <p>Prosody control: duration, pitch and energy of the synthetic voice can be controlled. </p>
+    
     </div>
-
-
-    <p class="toc_title">Contenido</p>
+    <p>&nbsp;</p>    
+    
+    <b>Audio Demos</b></p>
     <div id="toc_container">
     <ul>
-      <li><a href="#ss">Voces masculinas argentinas</a></li>
-      <li><a href="#ms">Voces femeninas argentinas</a></li>
-      <li><a href="#e2e">Acentos latinoamericanos</a></li>
+      <li><a href="#ss">Argentinian male voices</a></li>
+      <li><a href="#ms">Argentinian females voices</a></li>
+      <li><a href="#e2e">Latinamerican Accents</a></li>
       <li><a href="#al">Voice cloning</a></li>
     </ul>
     </div>
@@ -36,13 +46,13 @@
     <p>&nbsp;</p>
 
     <div>
-      <a name="ss"><h2>Voces masculinas argentinas</h2></a>
+      <a name="ss"><h2>Argentinian male voices</h2></a>
       <hr>
       <br>
       <table>
         <tbody>
             <tr>
-                <td nowrap width="160">Ejemplos 1</td>
+                <td nowrap width="160">Samples #1</td>
                 <td><audio controls><source src="Audios/MyF/Masculinas/arm_00610.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Masculinas/arm_01523.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Masculinas/arm_02484.wav" type="audio/wav"></audio>
@@ -52,7 +62,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td nowrap width="160">Ejemplos 2</td>
+                <td nowrap width="160">Samples #2</td>
                 <td><audio controls><source src="Audios/MyF/Masculinas/arm_06136.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Masculinas/arm_07049.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Masculinas/arm_07508.wav" type="audio/wav"></audio>
@@ -66,13 +76,13 @@
     </div>
     <br>
     <div>
-      <a name="ms"><h2>Voces femeninas argentinas</h2></a>
+      <a name="ms"><h2>Argentinian females voices</h2></a>
       <hr>
       <br>
       <table>
         <tbody>
             <tr>
-                <td nowrap width="160">Ejemplos 1</td>
+                <td nowrap width="160">Samples #1</td>
                 <td><audio controls><source src="Audios/MyF/Femeninas/arf_00295.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Femeninas/arf_01523.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Femeninas/arf_02436.wav" type="audio/wav"></audio>
@@ -82,7 +92,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td nowrap width="160">Ejemplos 2</td>
+                <td nowrap width="160">Samples #2</td>
                 <td><audio controls><source src="Audios/MyF/Femeninas/arf_04310.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Femeninas/arf_05223.wav" type="audio/wav"></audio>
                 <td><audio controls><source src="Audios/MyF/Femeninas/arf_05679.wav" type="audio/wav"></audio>
@@ -96,27 +106,27 @@
     </div>
     <br>
     <div>
-        <a name="al"><h2>Clonación de voz</h2></a>
+        <a name="al"><h2>Voice cloning</h2></a>
         <hr>
         <br>
         <table>
           <tbody>
           <tr>
-            <td nowrap width="160">Charly García (target)</td>
+            <td nowrap width="160">Target speaker #1</td>
             <td><audio controls><source src="Audios/Voces Famosas/charly_original.wav" type="audio/wav"></audio>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
-            <td nowrap width="130">Charly García (sintética)</td>
+            <td nowrap width="130">Cloned speaker #1</td>
             <td><audio controls><source src="Audios/Voces Famosas/charly_ds.wav" type="audio/wav"></audio>
           <tr>
-            <td nowrap width="160">Spinetta (target)</td>
+            <td nowrap width="160">Target speaker #2</td>
             <td><audio controls><source src="Audios/Voces Famosas/spinetta_original.wav" type="audio/wav"></audio>
-            <td nowrap width="130">Spinetta (sintética)</td>
+            <td nowrap width="130">Cloned speaker #2</td>
             <td><audio controls><source src="Audios/Voces Famosas/spinetta_ds.wav" type="audio/wav"></audio>            
             </td>
           </tr>
           <tr>
-            <td nowrap width="160">Maradona (target)</td>
+            <td nowrap width="160">Target speaker #3</td>
             <td><audio controls><source src="Audios/Voces Famosas/maradona_original.wav" type="audio/wav"></audio>
-            <td nowrap width="130">Maradona (sintética)</td>
+            <td nowrap width="130">Cloned speaker #3</td>
             <td><audio controls><source src="Audios/Voces Famosas/maradona_ds.wav" type="audio/wav"></audio>
             </td>
           </tr>
@@ -124,7 +134,7 @@
         </table>
       </div>
       <div>
-        <a name="e2e"><h2>Acentos latinoamericanos</h2></a>
+        <a name="e2e"><h2>Latinamerican accents</h2></a>
         <hr>
         <br>
         <table>
