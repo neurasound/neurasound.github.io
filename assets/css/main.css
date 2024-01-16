@@ -3555,3 +3555,12 @@ ul.flags li {
 	line-height: 2em;
 	padding-left: 1.5em;
 }
+
+gradio-app {
+    margin: 20px; /* Adjust the margin as needed */
+    display: block; /* Set display to block */
+    width: 60%; /* Adjust the width as needed */
+    max-width: 600px; /* Optionally, set a maximum width */
+    margin-left: auto; /* Center the element by pushing it to the right */
+    margin-right: auto; /* Center the element by pushing it to the left */
+  }
