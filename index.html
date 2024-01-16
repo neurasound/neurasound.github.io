@@ -1,240 +1,421 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Neurasound TTS</title>
-    <meta charset="UTF-8">
-    <style>
-        red {color: red}
-        audio {width: 250px}
-    </style>
-  </head>
-  <body>
-    <article>
-      <header>
-        <h1>Latinamerican multiaccent Text-to-Speech Services</h1>
-      </header>
-    </article>
-      <b>About Neurasound </b>    
-        <p>We are a group of audio an machine learning reaserchers based in Buenos Aires, Argentina. Our main goal is to bring AI technology to latinamerican markets, pushing the limits of voice synthesis.</p>
-        <p>For more information contact us: <strong>info@neurasound.com.ar</strong></p>    
-        <p>&nbsp;</p> 
-      <b> Product description </b>
-        <p>Nowadays, very few spanish TTS exist in the market, and most of them have a neutral, Spain or Mexican accent. We focused our efforts in providing an argentinian spanish TTS, which feels more natural to argentinian users and constitutes the main novelty of our project. We also experimented with accents from other latinamerican countries like Colombia and Chile, by curating a multi-accent spanish dataset.</p>
-                
-      <b> Main features </b>
-        <p>Our model supports a variety of latinamerican spanish accents (Argentina, Chile, Colombia, España, México, Perú, Puerto Rico, Uruguay and Venezuela)</p>
-        <p><strong>Voice cloning:</strong> By performing speaker adaptation with less than 10 minutes of speech from the target speaker.</p>
-        <p><strong>Prosody control:</strong> Duration, pitch and energy of the synthetic voice can be controlled. </p>
-    
-    </div>
-    <p>&nbsp;</p>    
-    
-    <b>Audio Demos</b></p>
-    <div id="toc_container">
-    <ul>
-      <li><a href="#ss">Argentinian male voices</a></li>
-      <li><a href="#ms">Argentinian females voices</a></li>
-      <li><a href="#e2e">Latinamerican Accents</a></li>
-      <li><a href="#al">Voice cloning</a></li>
-      <li><a href="#vt">Voice conversion</a></li>
-    </ul>
-    </div>
+	<title>Neurasound</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://kit.fontawesome.com/4575c36c07.js" crossorigin="anonymous"></script>
+</head>
 
-    <p>&nbsp;</p>
+<body class="is-preload">
+	<div id="page-wrapper">
 
-    <div>
-      <a name="ss"><h2>Argentinian male voices</h2></a>
-      <hr>
-      <br>
-      <table>
-        <tbody>
-            <tr>
-                <td nowrap width="160">Samples #1</td>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_00610.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_01523.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_02484.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_03397.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_04310.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_05223.wav" type="audio/wav"></audio>       
-                </td>
-                </tr>
-                <tr>
-                <td nowrap width="160">Samples #2</td>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_06136.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_07049.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_07508.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_08421.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_08784.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Masculinas/arm_09697.wav" type="audio/wav"></audio> 
-                </td>
-                </tr>      
-        </tbody>
-      </table>
-    </div>
-    <br>
-    <div>
-      <a name="ms"><h2>Argentinian females voices</h2></a>
-      <hr>
-      <br>
-      <table>
-        <tbody>
-            <tr>
-                <td nowrap width="160">Samples #1</td>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_00295.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_01523.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_02436.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_02484.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_03398.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_03853.wav" type="audio/wav"></audio>       
-                </td>
-                </tr>
-                <tr>
-                <td nowrap width="160">Samples #2</td>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_04310.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_05223.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_05679.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_07508.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_08421.wav" type="audio/wav"></audio>
-                <td><audio controls><source src="Audios/MyF/Femeninas/arf_09697.wav" type="audio/wav"></audio> 
-                </td>
-                </tr>      
-        </tbody>
-      </table>
-    </div>
-    <br>
-    <div>
-        <a name="al"><h2>Voice cloning</h2></a>
-        <hr>
-        <br>
-        <table>
-          <tbody>
-          <tr>
-            <td nowrap width="160">Target speaker #1</td>
-            <td><audio controls><source src="Audios/Voces Famosas/ch_target.wav" type="audio/wav"></audio>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
-            <td nowrap width="130">Cloned speaker #1</td>
-            <td><audio controls><source src="Audios/Voces Famosas/ch_ds.wav" type="audio/wav"></audio>
-          <tr>
-            <td nowrap width="160">Target speaker #2</td>
-            <td><audio controls><source src="Audios/Voces Famosas/sp_target.wav" type="audio/wav"></audio>
-            <td nowrap width="130">Cloned speaker #2</td>
-            <td><audio controls><source src="Audios/Voces Famosas/sp_ds.wav" type="audio/wav"></audio>            
-            </td>
-          </tr>
-          <tr>
-            <td nowrap width="160">Target speaker #3</td>
-            <td><audio controls><source src="Audios/Voces Famosas/ma_target.wav" type="audio/wav"></audio>
-            <td nowrap width="130">Cloned speaker #3</td>
-            <td><audio controls><source src="Audios/Voces Famosas/ma_ds.wav" type="audio/wav"></audio>
-            </td>
-          </tr>
-          <tr>
-            <td nowrap width="160">Target speaker #4</td>
-            <td><audio controls><source src="Audios/Voces Famosas/ra_ref.wav" type="audio/wav"></audio>
-            <td nowrap width="130">Cloned speaker #4</td>
-            <td><audio controls><source src="Audios/Voces Famosas/ra_syn.wav" type="audio/wav"></audio>
-            </td>
-          </tr>
-          <tr>
-            <td nowrap width="160">Target speaker #5</td>
-            <td><audio controls><source src="Audios/Voces Famosas/su_ref.wav" type="audio/wav"></audio>
-            <td nowrap width="130">Cloned speaker #5</td>
-            <td><audio controls><source src="Audios/Voces Famosas/su_syn.wav" type="audio/wav"></audio>
-            </td>
-          </tr>
-          <tr>
-            <td nowrap width="160">Target speaker #6</td>
-            <td><audio controls><source src="Audios/Voces Famosas/lg_ref.wav" type="audio/wav"></audio>
-            <td nowrap width="130">Cloned speaker #6</td>
-            <td><audio controls><source src="Audios/Voces Famosas/lg_syn.wav" type="audio/wav"></audio>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-      <div>
-        <a name="e2e"><h2>Latinamerican accents</h2></a>
-        <hr>
-        <br>
-        <table>
-          <tbody>
-            <tr>
-              <td nowrap width="160"><strong>Colombia</strong> (Female)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/f_colombia.wav" type="audio/wav"></audio>
-              <td nowrap width="130"><strong>Colombia</strong> (Male)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/m_colombia.wav" type="audio/wav"></audio>
-              </td>
-            </tr>
-            <tr>
-              <td nowrap width="160"><strong>Chile</strong> (Female)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/f_chile.wav" type="audio/wav"></audio>
-              <td nowrap width="130"><strong>Chile</strong> (Male)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/m_chile.wav" type="audio/wav"></audio>
-              </td>
-            </tr>
-            <tr>
-              <td nowrap width="160"><strong>Perú</strong> (Female)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/f_peru.wav" type="audio/wav"></audio>
-              <td nowrap width="130"><strong>Perú</strong> (Male)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/m_peru.wav" type="audio/wav"></audio>
-              </td>
-            </tr>
-            <tr>
-              <td nowrap width="160"><strong>Puerto Rico</strong> (Female)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/f_puertorico.wav" type="audio/wav"></audio>
-              <td nowrap width="130"><strong>Puerto Rico</strong> (Male)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/m_puertorico.wav" type="audio/wav"></audio>
-              </td>
-            </tr>
-            <tr>
-              <td nowrap width="160"><strong>Venezuela</strong> (Female)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/f_venezuela.wav" type="audio/wav"></audio>
-              <td nowrap width="130"><strong>Venezuela</strong> (Male)</td>
-              <td><audio controls><source src="Audios/audios_main/acentos/m_venezuela.wav" type="audio/wav"></audio>
-              </td>
-            </tr>
-            
-          </tbody>
-        </table>
-      </div>
-    <div>
-      <a name="vt"><h2>Voice conversion</h2></a>
-      <hr>
-      <br>
-      <table>
-        <tbody>
-          <tr>
-            <td nowrap width="160">Original Speaker</td>
-            <td><audio controls><source src="Audios/Voces Famosas/transformation/alberto1.mp3" type="audio/wav"></audio>
-            </td>
-            <tr>
-              <td nowrap width="80">Converted (Male)</td>
-              <td><audio controls><source src="Audios/Voces Famosas/transformation/ped_arm06136.wav" type="audio/wav"></audio>
-              <td nowrap width="80">Converted (Female)</td>
-              <td><audio controls><source src="Audios/Voces Famosas/transformation/ped_arf.wav" type="audio/wav"></audio>
-            </tr>      
-            <tr>
-              <td nowrap width="80">Converted (Male) - Free pitch</td>
-              <td><audio controls><source src="Audios/Voces Famosas/transformation/ed.wav" type="audio/wav"></audio>
-              <td nowrap width="80">Converted (Female) - Free pitch</td>
-              <td><audio controls><source src="Audios/Voces Famosas/transformation/ed_arf.wav" type="audio/wav"></audio>
-            </tr>
-            <tr>
-              <td nowrap width="80">Converted (Male) - Free prosody</td>
-              <td><audio controls><source src="Audios/Voces Famosas/transformation/nc.wav" type="audio/wav"></audio>
-              <td nowrap width="80">Converted (Female) - Free prosody</td>
-              <td><audio controls><source src="Audios/Voces Famosas/transformation/nc_arf.wav" type="audio/wav"></audio>
-            </tr>
+		<!-- Header -->
+		<div id="header">
 
-        </tbody>
-      </table>
-    </div>
-  <gradio-app
-    src="https://958a-157-92-27-254.ngrok-free.app"
-  ></gradio-app>
-   <script
-    type="module"
-    src="https://gradio.s3-us-west-2.amazonaws.com/4.8.0/gradio.js"
-    ></script>
-    </body>
+			<!-- Logo -->
+			<h1><a href="index.html"><img src='images/neurasound_nuevo.png' width='320'/> </a></h1>
+
+			<!-- Nav -->
+			
+		</div>
+
+		<!-- Banner -->
+<!-- 		<section id="banner">
+			<header>
+
+				<div class="row">
+					<div class="col-3 col-12-mobilep"> -->
+						<!-- <input type="text" name="name" id="ttsinput" placeholder="Hola!" /> -->
+<!-- 					</div>
+					<div class="col-3 col-12-mobilep">
+						<input type="text" name="name" id="ttsinput" value="Hola!" style="color: initial;" />
+					</div>
+					<div class="col-3 col-12-mobilep">
+						<a href="#" class="button" onclick="loadDoc();">Get Audio</a>
+					</div>
+
+				</div>
+				<div class="row" style="margin-top:20px">
+					<div class="col-12 col-12-mobilep">
+						<div id="demo"></div>
+					</div>
+				</div>
+			</header>
+
+
+		</section> -->
+
+		<!-- Gigantic Heading -->
+		<section class="wrapper style2" style="padding-top: 55px;">
+			<div class="container">
+				<header class="major">
+					<h2>Servicio de Conversión de Texto a Habla Hispanoamericano</h2>
+					<p>Generá habla sintética eligiendo la voz que más se adapte a tus necesidades. Crea tu TTS personalizado clonando la voz que más te guste.</p>
+				</header>
+			</div>
+		</section>
+
+		<!-- Highlights -->
+		<section class="wrapper style1" style="padding-top: 38px;">
+			<div class="container">
+				<div class="row gtr-200">
+					<section class="col-4 col-12-narrower">
+						<div class="box highlight">
+							<i class="icon solid major fa-user"></i>
+							<h3>Voces personalizadas</h3>
+							<p>Puedes elegir entre una gran variedad de voces y nacionalidades. </p>
+						</div>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class="box highlight">
+							<i class="icon solid major fa-sliders"></i>
+							<h3>Control de la prosodia</h3>
+							<p>Controlá el tono, duración y energía de las frases generadas. Agregá pausas, tildes y signos de interrogación.</p>
+						</div>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class="box highlight">
+							<i class="icon solid major fa fa-clone"></i>
+							<h3>Clonación de voz</h3>
+							<p>Cloná una voz a partir de menos de 10 minutos de audio. </p>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Posts -->
+		<section class="wrapper style2" style="padding-top: 0px;padding-bottom: 30px;"></section>>
+			<div class="container" style="padding-bottom: 30px;" >
+				<div class="row">
+					<section class="col">
+						<h2>¡Escuchá algunas de nuestras voces sintéticas!</h2>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col-4 col-12-narrower">	
+<audio controls><source src="https://github.com/neurasound/neurasound.github.io/blob/main/Audios/audios_main/samples_1.wav?raw=true" type="audio/wav" type="audio/wav"></audio>
+					</section>
+					<section class="col-4 col-12-narrower">	
+						<audio controls><source src="https://github.com/neurasound/neurasound.github.io/blob/main/Audios/audios_main/samples_2.wav?raw=true" type="audio/wav" type="audio/wav"></audio>
+					</section>
+					<section class="col-4 col-12-narrower">	
+						<audio controls><source src="https://github.com/neurasound/neurasound.github.io/blob/main/Audios/audios_main/samples_2b.wav?raw=true" type="audio/wav" type="audio/wav"></audio>
+					</section>
+					<section class="col-4 col-12-narrower">	
+						<audio controls><source src="https://github.com/neurasound/neurasound.github.io/blob/main/Audios/audios_main/samples_3.wav?raw=true" type="audio/wav" type="audio/wav"></audio>
+					</section>
+					<section class="col-4 col-12-narrower">	
+						<audio controls><source src="https://github.com/neurasound/neurasound.github.io/blob/main/Audios/audios_main/samples_4.wav?raw=true" type="audio/wav" type="audio/wav"></audio>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col">
+						<h2>Ejemplos de clonación de voz:</h2>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Referencia 1</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/1_target.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Sintetizado</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/1_syn.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+				</div>
+				<div class="row content-center">
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Referencia 2</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class='audio-container'>
+						<audio controls><source src="audios/2_target.wav" type="audio/wav" type="audio/wav"></audio>
+						</div>
+					</section>
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Sintetizado</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class='audio-container'>
+						<audio controls><source src="audios/2_syn.wav" type="audio/wav" type="audio/wav"></audio>
+						</div>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Referencia 3</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class='audio-container'>
+						<audio controls><source src="audios/3_target.wav" type="audio/wav" type="audio/wav"></audio>
+						</div>
+					</section>
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Sintetizado</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+						<div class='audio-container'>
+						<audio controls><source src="audios/3_syn.wav" type="audio/wav" type="audio/wav"></audio>
+						</div>
+					</section>					
+				</div>
+				<div class="row">
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Referencia 4</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/4_target.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Sintetizado</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/4_syn.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Referencia 5</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/5_target.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Sintetizado</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/5_syn.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+				</div>
+				<div class="row">
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Referencia 6</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/6_target.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+					<section class="col-2 col-12-narrower">
+						<h4 class="content_center">Sintetizado</h4>
+					</section>
+					<section class="col-4 col-12-narrower">
+					<div class='audio-container'>
+						<audio controls><source src="audios/6_syn.wav" type="audio/wav" type="audio/wav"></audio>
+					</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+
+		<section id="cta" class="wrapper style3">
+			<div class="container" style="padding-bottom: 15px;">
+				<header>
+					<h2>¿Estás listo para probar nuestro servicio de conversión de texto a habla?</h2>
+				</header>
+			</div>
+
+			<div class="row">
+				<div class="col-3 col-12-mobilep">
+						<!-- <input type="text" name="name" id="ttsinput" placeholder="Hola!" /> -->
+				</div>
+				<div class="col-6 col-12-mobilep">
+					<textarea name="textinput" id="textinput" placeholder="Hola!" rows="3">Hola</textarea>
+				</div>
+				<div class="col-2 col-12-mobilep">
+					<a class="button" onclick="get_audio();">Generar</a>
+					<fieldset style=" text-align: left;">				
+						  <input type="radio" id="radio_text" name="radios" value="radio_text" onclick="SSML()"
+								 checked>
+						  <label for="radio_text" style="display: inline; ">Texto</br>
+					
+						  <input type="radio" id="radio_SSML" name="radios" value="radio_SSML" onclick="SSML()">
+						  <label for="radio_SSML" style="display: inline;">SSML</br>
+					
+					</fieldset>
+					
+				
+					
+				</div>
+			</div>
+
+			<div class="row" style="margin-top:20px">
+				<div class="col-12 col-12-mobilep">
+					<div id="demo"></div>
+				</div>
+			</div>
+
+			<div class="container">
+				<h5>Elegí una nacionalidad</h5>
+
+			<ul class="flags">
+				<li><img class='flag-icon accent accent_selected' src="assets/flags/4x3/ar.svg" id="accent_arg" onclick="set_accent('arg')" alt="" ><h4>arg</h4></li>
+				<li><img class='flag-icon accent' src="assets/flags/4x3/cl.svg" id="accent_chi" onclick="set_accent('chi')" alt="" ><h4>chi</h4></li>
+				<li><img class='flag-icon accent' src="assets/flags/4x3/co.svg" id="accent_col" onclick="set_accent('col')" alt=""><h4>col</h4></li>
+				<li><img class='flag-icon accent' src="assets/flags/4x3/pe.svg" id="accent_per" onclick="set_accent('per')" alt=""><h4>per</h4></li>
+				<li><img class='flag-icon accent' src="assets/flags/4x3/pr.svg" id="accent_pr" onclick="set_accent('pr')" alt=""><h4>pr</h4></li>
+				<li><img class='flag-icon accent' src="assets/flags/4x3/ve.svg" id="accent_ven" onclick="set_accent('ven')" alt=""><h4>ven</h4></li>
+			</ul>
+
+				<h5>Elegí una voz</h5>
+				<select id="speaker" name="speaker" style="width:100px; height: auto;text-align: center;">
+					<option value="f1">F1</option>
+					<option value="f2">F2</option>
+					<option value="f3">F3</option>
+					<option value="f4">F4</option>
+					<option value="f5">F5</option>
+					<option value="f6">F6</option>
+					<option value="f7">F7</option>
+					<option value="f8">F8</option>
+					<option value="f9">F9</option>
+					<option value="f10">F10</option>
+					<option value="m1">M1</option>
+					<option value="m2">M2</option>
+					<option value="m3">M3</option>
+					<option value="m4">M4</option>
+					<option value="m5">M5</option>
+					<option value="m6">M6</option>
+					<option value="m7">M7</option>
+					<option value="m8">M8</option>
+					<option value="m9">M9</option>
+					<option value="m10">M10</option>
+					<option value="homero">Homero</option>
+					<option value="nelson">Nelson</option>
+					<option value="abe">Abe</option>
+					<option value="bart">Bart</option>
+					<option value="burns">Burns</option>
+					<option value="flanders">Ned Flanders</option>
+					<option value="gorgori">Jefe Gorgori</option>
+					<option value="hijoburns">Hijo de Burns</option>
+					<option value="krusty">Krusty</option>
+					<option value="mcclure">Mac Clure</option>
+					<option value="milhouse">Milhouse</option>
+					<option value="skinner">Skinner</option>
+					<option value="smithers">Smithers</option>
+					<option value="marge">Marge</option>
+					<option value="lisa">Lisa</option>
+					<option value="wos">Wos</option>
+					<option value="bilinkis">Bilinkis</option>
+					
+				  </select>
+			</div>			
+			<!-- <div class="row">
+				<div class="col">
+					<img class="flag-img" src="assets/flags/4x3/ar.svg" alt="Flag of Argentina">
+				</div>
+				<div class="col">
+					<img class="flag-img" src="assets/flags/4x3/cl.svg" alt="Flag of Chile">
+				</div>
+				<div class="col">
+					<img class="flag-img" src="assets/flags/4x3/co.svg" alt="Flag of Colombia">
+				</div>
+				<div class="col">
+					<img class="flag-img" src="assets/flags/4x3/pe.svg" alt="Flag of Peru">
+				</div>
+				<div class="col">
+					<img class="flag-img" src="assets/flags/4x3/pr.svg" alt="Flag of Puerto Rico">
+				</div>
+				<div class="col">
+					<img class="flag-img" src="assets/flags/4x3/ve.svg" alt="Flag of Venezuela">
+				</div>
+			</div> -->	
+		</section>
+
+		<section class="wrapper style2">
+			<div class="container">
+				<div class="row">
+				</div>
+
+		<section id="cta" class="wrapper style3">
+			<div class="container">
+				<header>
+					<h2>Más ejemplos e información <a href="https://neurasound.github.io/es" target=”_blank”> <span style="color: #5f5f5f">aquí</span></a></h2>
+				</header>
+			</div>
+		</section>
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<section class="col-6 col-6-narrower col-12-mobilep">
+						<h3>Acerca de nosotros</h3>
+						<p>Somos un grupo de investigadores argentinos trabajando en el campo de la acústica y la inteligencia artificial. Nuestra misión es acercar las tecnologías de habla basadas en IA a los mercados de Latinoamérica, llevando la síntesis de habla al siguiente nivel.</p>
+        				<p><strong>¡Nos encantaría escucharte!</strong></p>    
+					</section>
+
+					<section class="col-6 col-12-narrower">
+						<h3>Contactanos</h3>
+						<form class="gform" method="POST" data-email="info@neurasound.com"
+						
+  action="https://script.google.com/macros/s/AKfycbxivqP_-EbcJ8dkNd1hCl5goNg_A2wKfKY0ZDIbvq9oySQ0SYey4n1xxMzcEwHCylOv/exec">
+						<form method="post">
+							<div class="row gtr-50 form-elements">
+								<div class="col-6 col-12-mobilep">
+									<input type="name" name="name" id="name" placeholder="Nombre" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Mensaje" rows="5"></textarea>
+								</div>
+								<div class="col-12">
+										<input type="submit" id="sendbutton" class="button alt" value="Enviar mensaje">
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+
+  			<script data-cfasync="false" src="assets/js/form-submission-handler.js"></script>
+
+			<!-- Copyright -->
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; Neurasound. Todos los derechos reservados</li>
+					<li>Diseño web: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
